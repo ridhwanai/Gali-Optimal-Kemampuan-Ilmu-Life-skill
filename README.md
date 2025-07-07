@@ -1,0 +1,1 @@
+# Gali-Optimal-Kemampuan-Ilmu-Life-skill

@@ -1,0 +1,180 @@
+/* TechFix Modern Login & Register Styles - FINAL V2 */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+}
+
+.auth-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-container {
+    display: flex;
+    max-width: 1000px;
+    width: 90%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    min-height: 600px;
+}
+
+/* Kiri - Branding */
+.login-brand-section {
+    flex: 1;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.brand-content .logo-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+/* Tambahkan ini di auth-style.css */
+
+.brand-logo .logo-image {
+    width: 250px;  /* Atur lebar logo di sini */
+    height: auto; /* Biarkan tinggi menyesuaikan agar proporsional */
+    margin-bottom: 15px;
+}
+
+.logo-icon i { font-size: 32px; color: white; }
+.brand-name { font-size: 42px; font-weight: 700; margin: 0 0 10px 0; }
+.brand-tagline h2 { font-size: 22px; font-weight: 600; margin-bottom: 10px; }
+.brand-tagline p { font-size: 15px; line-height: 1.6; }
+
+/* Kanan - Form */
+.login-form-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #ffffff;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.form-header { text-align: center; margin-bottom: 30px; }
+.form-header h3 { font-size: 28px; font-weight: 700; color: #1a202c; margin-bottom: 8px; }
+.form-header p { color: #718096; font-size: 15px; }
+
+/* Wadah utama form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Pengaturan lebar input dan tombol */
+.form-group, .btn-login {
+    width: 100%;
+    max-width: 400px; /* Anda bisa ubah angka ini untuk mengatur lebar */
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px 12px 20px; 
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #a0aec0;
+    cursor: pointer;
+}
+
+.btn-login {
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.form-footer p { color: #4a5568; font-size: 14px; }
+.form-footer a { color: #667eea; text-decoration: none; font-weight: 600; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .login-container { flex-direction: column; }
+    .login-brand-section { display: none; }
+}

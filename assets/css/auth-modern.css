@@ -1,0 +1,139 @@
+/* GoKill - Final Modern Auth UI (Two-Column) */
+
+.auth-page {
+    background: #f0f2f5; /* Latar belakang abu-abu muda */
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.login-container {
+    display: flex;
+    max-width: 950px;
+    width: 100%;
+    min-height: 600px;
+    background: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Kolom Kiri - Branding */
+.login-brand-section {
+    flex-basis: 45%;
+    background: linear-gradient(135deg, #4a90e2 0%, #004e92 100%);
+    color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-brand-section .brand-logo {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -2px;
+}
+
+.login-brand-section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.login-brand-section p {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Kolom Kanan - Form */
+.login-form-section {
+    flex-basis: 55%;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form-section h3 {
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.login-form-section .text-muted {
+    margin-bottom: 2.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    padding: 0.9rem 1.1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #cbd5e1;
+    background-color: #f8fafc;
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.btn-login-submit {
+    background: #4a90e2;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-login-submit:hover {
+    background: #3b73b5;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px -5px rgba(74, 144, 226, 0.4);
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.auth-links a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .login-container {
+        flex-direction: column;
+        max-width: 450px;
+        min-height: auto;
+    }
+    .login-brand-section {
+        flex-basis: auto;
+        padding: 2.5rem 2rem;
+    }
+}
